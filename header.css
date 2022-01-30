@@ -1,0 +1,441 @@
+.header
+{
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(90deg, rgb(240,240,240), white, rgb(240,240,240));
+	position: sticky;
+	top: 0px;
+	box-shadow: 0px 0px 10px rgb(15, 15, 15);
+	z-index: 1000;
+}
+
+/*-------------------------------- BLOC PANNEL --------------------------------*/
+.pannel
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 60px;
+	position: relative;
+}
+
+	/*-------------------------------- BLOC NAME --------------------------------*/
+	.name
+	{
+		display: flex;
+		width: 33.33%;
+	}
+
+	.name a
+	{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+
+		width: fit-content;
+		text-decoration: none;
+	}
+
+	.name h1
+	{
+		font-size: 40px;
+	}
+
+	.name a span
+	{
+		position: absolute;
+		left: 39px;
+		top: 10px;
+	}
+
+	.name > a:hover h1
+	{
+		color: #FFD700;
+	}
+
+	.name > a:hover span 
+	{
+		color: #FFD700;
+	}
+	/*-------------------------------- FIN BLOC NAME --------------------------------*/
+
+	/*-------------------------------- BLOC PANNEL_CENTER --------------------------------*/
+	.pannel_center
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 33.33%;
+	}
+
+	.search_bar
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 33px;
+		padding: 0px 10px 0px 10px;
+		background-color: white;
+		border-style: solid;
+		border-radius: 2px;
+	}
+
+	.search_bar form
+	{
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	.search
+	{
+		line-height: normal;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		border: none;
+	}
+
+	.search:focus
+	{
+		font-style: normal;
+		border: none;
+		outline: none;
+		color: #22397e;
+	}
+
+	.search_bar img
+	{
+		height: 18px;
+		margin-top: 3px;
+	}
+	/*-------------------------------- FIN BLOC PANNEL_CENTER --------------------------------*/
+
+	/*-------------------------------- BLOC ACTIONS --------------------------------*/
+	.actions
+	{
+		display: flex;
+		column-gap: 20px;
+		justify-content: flex-end;
+
+		width: 33.33%;
+	}
+
+	.actions a
+	{
+		display: flex;
+		align-items: center;
+
+		text-decoration: none;
+
+		padding-top: 1px;
+		border-bottom: 1px solid transparent;
+	}
+
+	.actions a:hover
+	{
+		border-bottom: 1px solid #22397e;
+	}
+
+	.actions_logo img
+	{
+		padding-top: 5px;
+	}
+
+	#img_bag
+	{
+		padding-top: 3px;
+		height: 19px;
+		width: 16px;
+	}
+
+	#img_heart
+	{
+		height: 16px;
+	}
+
+	#img_user
+	{
+		height: 18px;
+	}
+	/*-------------------------------- FIN BLOC ACTION --------------------------------*/
+
+/*--------------------------------- FIN PANNEL --------------------------------*/
+
+
+input[type="checkbox"]
+{
+	display: none;
+}
+
+.menu
+{
+	justify-content: center;
+	width: 100%;
+	justify-content: center;
+	margin: 0 auto;
+	background: linear-gradient(90deg, #1f326d, #22397e);
+}
+
+.menu ul
+{
+	list-style-type: none; /*pas de puce*/
+}
+
+.menu a
+{
+	display: block; /*tout le block est cliquable*/
+	text-decoration: none; /*pas de soulignement auto*/
+	border-bottom: 2px solid transparent; /*bordure transparente pour éviter un décallement*/
+	padding: 10px 0px;
+	color: white;
+}
+
+.menu a:hover
+{
+	color:  #FFD700;
+	border-bottom: 2px solid  #FFD700;
+}
+
+.option
+{
+	justify-content: center;
+	text-align: center;
+	font-family: 'main_font_bold';	
+}
+
+.sub-menu
+{
+	justify-content: center;
+
+	padding: 15px 0px 20px 0px;
+
+	left: 0px;
+	width: 100%;
+
+	background: linear-gradient(90deg, rgb(240,240,240), white, rgb(240,240,240));
+	z-index: 1000;
+}
+
+.sub-menu a
+{
+	padding: 0px 0px;
+	width: fit-content;
+	border-bottom: 1px solid transparent;
+	color: #22397e;
+}
+
+.sub-menu a:hover
+{
+	color : #22397e;
+	border-bottom: 1px solid #22397e;
+}
+
+.option_sub-menu 
+{
+	display: flex;
+	flex-direction: column;
+	row-gap: 7px;
+
+	font-family: "main_font";
+}
+
+@media screen and (min-width: 780px)
+{
+	/*-------------------------------- BLOC PANNEL --------------------------------*/
+	.pannel
+	{
+		margin: 0px 30px 0px 30px;
+	}
+
+	.rmenu
+	{
+		display: none;
+	}
+
+		/*-------------------------------- BLOC PANNEL_CENTER --------------------------------*/
+		.search_bar
+		{
+			min-width: 466px;
+		}
+
+		.search_bar img
+		{
+			margin-top: 3px;
+		}
+
+		.large_search
+		{
+			display: none;
+		}
+		/*-------------------------------- FIN BLOC PANNEL_CENTER --------------------------------*/
+
+		/*-------------------------------- BLOC ACTIONS --------------------------------*/
+		.actions a
+		{
+			padding-right: 2px;
+		}
+
+		.actions_logo img
+		{
+			padding-left: 5px;
+		}
+		/*-------------------------------- FIN BLOC ACTION --------------------------------*/
+
+	/*--------------------------------- FIN PANNEL --------------------------------*/
+
+	.menu
+	{
+		display: flex;
+	}
+
+	.option_a
+	{
+		width: 150px;
+	}
+
+	.option
+	{
+		display: inline-flex; /*alignement des éléments*/
+	}
+
+	.sub-menu
+	{
+		display: none;
+		position: absolute;
+		top: 100px;
+		column-gap: 60px;
+	}
+
+	.option:hover .sub-menu
+	{
+		display: flex;
+	}
+
+	.option_sub-menu
+	{
+		padding-top: 15px;
+	}
+}
+
+@media screen and (max-width: 1250px)
+{
+	.actions span
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 780px)
+{
+	/*-------------------------------- BLOC PANNEL --------------------------------*/
+	.pannel
+	{
+		margin: 0px 15px 0px 15px;
+	}
+
+		/*-------------------------------- BLOC RMENU --------------------------------*/
+		.rmenu
+		{
+			display: flex;
+			width: 33.33%;
+		}
+
+		.rmenu label
+		{
+			cursor: pointer;
+		}
+
+		.pannel label
+		{
+			font-size: x-large;
+			width: fit-content;
+			height: fit-content;
+			background: none;
+			border: none;
+		}
+
+		.pannel label:hover
+		{
+			color: #FFD700;
+		}
+
+		.pannel input
+		{
+			color: white;
+		}
+		/*-------------------------------- FIN BLOC RMENU --------------------------------*/
+
+	.name
+	{
+		justify-content: center;
+	}
+
+		/*-------------------------------- BLOC PANNEL_CENTER --------------------------------*/
+		.pannel_center
+		{
+			display: none;
+		}
+
+		.large_search
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			background: linear-gradient(90deg, #1f326d, #22397e);
+		}
+
+		.search_bar
+		{
+			width: 100%;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+		/*-------------------------------- FIN BLOC PANNEL_CENTER --------------------------------*/
+
+	/*--------------------------------- FIN PANNEL --------------------------------*/
+
+	/*-------------------------------- BLOC MENU --------------------------------*/
+	.menu
+	{
+		display: none;
+	}
+
+	.menu_content
+	{
+		width: 100%;
+	}
+
+
+	#scrolling_menu:checked + .menu
+	{
+		display: flex;
+		position: sticky;
+		top: 60px;
+	}
+
+	.sub-menu
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 30px;
+	}
+
+	.cat_sub-menu
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
+	}
+
+	.option_sub-menu
+	{
+		padding-top: 10px;
+	}
+
+	/*-------------------------------- FIN BLOC MENU --------------------------------*/
+}
