@@ -7,19 +7,19 @@
 @font-face
 {
 	font-family: 'main_font';
-	src: url('Quicksand_regular.otf');
+	src: url('font/Quicksand_regular.otf');
 }
 
 @font-face
 {
 	font-family: 'main_font_bold';
-	src: url('Quicksand_bold.otf');
+	src: url('font/Quicksand_bold.otf');
 }
 
 @font-face
 {
 	font-family: 'main_font_light';
-	src: url('Quicksand_light');
+	src: url('font/Quicksand_light');
 }
 
 body
