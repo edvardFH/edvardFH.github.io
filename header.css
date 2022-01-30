@@ -9,6 +9,11 @@
 	z-index: 1000;
 }
 
+input[type="checkbox"]
+{
+	display: none;
+}
+
 /*-------------------------------- BLOC PANNEL --------------------------------*/
 .pannel
 {
@@ -162,14 +167,9 @@
 	}
 	/*-------------------------------- FIN BLOC ACTION --------------------------------*/
 
-/*--------------------------------- FIN PANNEL --------------------------------*/
+/*--------------------------------- FIN BLOC PANNEL --------------------------------*/
 
-
-input[type="checkbox"]
-{
-	display: none;
-}
-
+/*--------------------------------- BLOC MENU --------------------------------*/
 .menu
 {
 	justify-content: center;
@@ -199,48 +199,53 @@ input[type="checkbox"]
 	border-bottom: 2px solid  #FFD700;
 }
 
-.option
-{
-	justify-content: center;
-	text-align: center;
-	font-family: 'main_font_bold';	
-}
+	/*--------------------------------- BLOC OPTION --------------------------------*/
+	.option
+	{
+		justify-content: center;
+		text-align: center;
+		font-family: 'main_font_bold';	
+	}
 
-.sub-menu
-{
-	justify-content: center;
+	.sub-menu
+	{
+		justify-content: center;
 
-	padding: 15px 0px 20px 0px;
+		padding: 15px 0px 20px 0px;
 
-	left: 0px;
-	width: 100%;
+		left: 0px;
+		width: 100%;
 
-	background: linear-gradient(90deg, rgb(240,240,240), white, rgb(240,240,240));
-	z-index: 1000;
-}
+		background: linear-gradient(90deg, rgb(240,240,240), white, rgb(240,240,240));
+		z-index: 1000;
+	}
 
-.sub-menu a
-{
-	padding: 0px 0px;
-	width: fit-content;
-	border-bottom: 1px solid transparent;
-	color: #22397e;
-}
+	.sub-menu a
+	{
+		padding: 0px 0px;
+		width: fit-content;
+		border-bottom: 1px solid transparent;
+		color: #22397e;
+	}
 
-.sub-menu a:hover
-{
-	color : #22397e;
-	border-bottom: 1px solid #22397e;
-}
+	.sub-menu a:hover
+	{
+		color : #22397e;
+		border-bottom: 1px solid #22397e;
+	}
 
-.option_sub-menu 
-{
-	display: flex;
-	flex-direction: column;
-	row-gap: 7px;
-	text-align: left;
-	font-family: "main_font";
-}
+	.option_sub-menu 
+	{
+		display: flex;
+		flex-direction: column;
+		row-gap: 7px;
+		text-align: left;
+		font-family: "main_font";
+	}
+	/*--------------------------------- FIN BLOC MENU --------------------------------*/
+
+/*--------------------------------- BLOC MENU --------------------------------*/
+
 
 @media screen and (min-width: 780px)
 {
@@ -284,41 +289,47 @@ input[type="checkbox"]
 		}
 		/*-------------------------------- FIN BLOC ACTION --------------------------------*/
 
-	/*--------------------------------- FIN PANNEL --------------------------------*/
+	/*--------------------------------- FIN BLOC PANNEL --------------------------------*/
 
+	/*--------------------------------- BLOC MENU --------------------------------*/
 	.menu
 	{
 		display: flex;
 	}
 
-	.option_a
-	{
-		width: 150px;
-	}
+		/*--------------------------------- BLOC OPTION --------------------------------*/
+		.option
+		{
+			display: inline-flex; /*alignement des éléments*/
+		}
 
-	.option
-	{
-		display: inline-flex; /*alignement des éléments*/
-	}
+		.option_a
+		{
+			width: 150px;
+		}
 
-	.sub-menu
-	{
-		display: none;
-		position: absolute;
-		top: 100px;
-		column-gap: 60px;
-	}
+		.sub-menu
+		{
+			display: none;
+			position: absolute;
+			top: 100px;
+			column-gap: 60px;
+		}
 
-	.option:hover .sub-menu
-	{
-		display: flex;
-	}
+		.option:hover .sub-menu
+		{
+			display: flex;
+		}
 
-	.option_sub-menu
-	{
-		padding-top: 15px;
-	}
+		.option_sub-menu
+		{
+			padding-top: 15px;
+		}
+		/*--------------------------------- FIN BLOC OPTION --------------------------------*/
+
+	/*--------------------------------- FIN BLOC MENU --------------------------------*/
 }
+
 
 @media screen and (max-width: 1250px)
 {
@@ -327,6 +338,7 @@ input[type="checkbox"]
 		display: none;
 	}
 }
+
 
 @media screen and (max-width: 780px)
 {
@@ -417,25 +429,27 @@ input[type="checkbox"]
 		top: 60px;
 	}
 
-	.sub-menu
-	{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		row-gap: 30px;
-	}
+		/*--------------------------------- BLOC OPTION --------------------------------*/
+		.sub-menu
+		{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			row-gap: 30px;
+		}
 
-	.cat_sub-menu
-	{
-		display: flex;
-		flex-direction: column;
-		margin-left: 30px;
-	}
+		.cat_sub-menu
+		{
+			display: flex;
+			flex-direction: column;
+			margin-left: 30px;
+		}
 
-	.option_sub-menu
-	{
-		padding-top: 10px;
-	}
+		.option_sub-menu
+		{
+			padding-top: 10px;
+		}
+		/*--------------------------------- FIN BLOC OPTION --------------------------------*/
 
 	/*-------------------------------- FIN BLOC MENU --------------------------------*/
 }
