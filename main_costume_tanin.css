@@ -1,0 +1,236 @@
+#men
+{
+	color: #FFD700;
+}
+
+main
+{
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;	
+
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+}
+
+section
+{
+	display: flex;
+
+	width: 100%;
+	margin: 30px 30px 0px 30px;
+	
+	overflow: hidden;
+}
+
+.message
+{
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+
+	text-align: center;
+	height: fit-content;
+
+	padding: 20px 15px 25px 15px;
+}
+
+aside
+{
+	display: flex;
+	align-self: flex-start;
+	text-align: left;
+	flex-direction: column;
+	width: 33%;
+	min-width: 300px;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.message p
+{
+	font-size: large;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.message p:first-of-type
+{
+	text-align: left;
+}
+
+
+.message strong
+{
+	text-decoration: none;
+	font-size: x-large;
+}
+
+.selection img 
+{
+	width: 100%;
+
+}
+
+aside .item_title
+{
+	font-size: xx-large;
+	font-family: 'main_font_bold';
+	border-bottom: 2px solid #22397e;
+}
+
+.message aside .price
+{
+	text-align: right;
+	font-size: x-large;
+}
+
+.size_t
+{
+	margin-top: 30px;
+}
+
+.item_size
+{
+	display: flex;
+	column-gap: 10px;
+	height: 35px;
+}
+
+.item_size label
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	cursor: pointer;
+	border: 1px solid lightgrey;
+}
+
+.item_size label:hover
+{
+	border: 1px solid #22397e;
+}
+
+.item_size input:checked + label
+{
+	border: 1px solid #1f326d;
+}
+
+
+input[name="size_"]
+{
+	display: none;
+}
+
+.message aside a 
+{
+	text-align: center;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	text-decoration: none;
+
+	color: white;
+	background: linear-gradient(90deg, #22397e, #1f326d);
+}
+
+.message aside a:hover
+{
+	background: linear-gradient(90deg, #2e50b6, #264399);
+	text-decoration: none;
+}
+
+.message aside .carac
+{
+	width: 100%;
+	border-bottom: 1px solid #22397e;
+}
+
+.message aside .description
+{
+	font-size: medium;
+}
+
+@media screen and (min-width: 1200px)
+{
+	section
+	{
+		justify-content: center;
+	}
+
+
+	.message
+	{
+		width: fit-content;
+	}
+
+	.selection
+	{
+		column-gap: 20px;
+	}
+
+	.selection figure
+	{
+		width: 600px;
+	}
+
+	.message aside a
+	{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 1200px)
+{
+	section
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section img
+	{
+		width: 80%;
+	}
+
+	aside
+	{
+		width: 80%;
+		align-self: center;
+	}
+
+	.messsage aside a
+	{
+		width: 100%;
+	}
+
+	.message
+	{
+		flex-direction: column;
+		align-items: center;
+		width: 95%;
+	}
+
+	.selection
+	{
+		row-gap: 50px;
+	}
+
+	.selection .message
+	{
+		align-items: center;
+		width: 100%;
+	}
+
+	.message figure
+	{
+		width: 80%;
+	}
+}	
