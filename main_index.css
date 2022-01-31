@@ -1,0 +1,215 @@
+main
+{
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;	
+
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+section
+{
+	display: flex;
+
+	width: 100%;
+	margin: 30px;
+	
+	overflow: hidden;
+}
+
+.daily_msg
+{	
+	column-gap: 30px;
+	padding: 20px 20px 30px 20px;
+	background: linear-gradient(#22397e, #1f326d);
+}
+
+.message
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	text-align: center;
+	height: fit-content;
+
+	background-color: white;
+	padding: 0px 15px 25px 15px;
+}
+
+.message p
+{
+	font-family: 'main_font_bold';
+	font-size: large;
+
+	width: 80%;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	border-bottom: 2px solid #22397e;
+}
+
+.daily_msg img
+{
+	width: 80%;
+}
+
+.message strong
+{
+	text-decoration: none;
+	font-size: x-large;
+}
+
+.message a
+{
+	text-decoration: none;
+}
+
+.collection img 
+{
+	width: 90%;
+}
+
+.collection a 
+{
+	width: 90%;
+
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+
+	color: white;
+	background: linear-gradient(90deg, #22397e, #1f326d);
+}
+
+.collection a:hover
+{
+	background: linear-gradient(90deg, #2e50b6, #264399);
+	text-decoration: none;
+}
+
+@media screen and (min-width: 1000px)
+{
+	section
+	{
+		justify-content: center;
+	}
+
+	.message
+	{
+		width: 33%;
+	}
+
+	.daily_msg img
+	{
+		border-bottom: 2px solid #22397e;
+	}
+
+	.message a
+	{
+		padding-top: 5px;
+	}
+
+	.message a:hover
+	{
+		text-decoration: underline;
+	}
+
+	.collection
+	{
+		column-gap: 50px;
+	}
+
+	.collection .message
+	{
+		padding-top: 30px;
+	}
+
+	.collection .message a 
+	{
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1000px)
+{
+	section
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.daily_msg
+	{
+		row-gap: 20px;
+	}
+
+	.message
+	{
+		width: 95%;
+	}
+
+	.daily_msg .message a 
+	{
+		width: 80%;
+	}
+
+	.message a
+	{
+
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 3px;
+
+		color: white;
+		background: linear-gradient(90deg, #22397e, #1f326d);
+	}
+
+	.message a:hover
+	{
+		background: linear-gradient(90deg, #2e50b6, #264399);
+		text-decoration: none;
+	}
+
+	.collection
+	{
+		background-color: white;
+		padding: 0px 20px 20px 20px;
+		margin-bottom: 30px;
+		row-gap: 10px;
+	}
+
+	.collection .message
+	{
+		align-items: center;
+		padding: 0px 0px 10px 0px;
+		width: 100%;
+	}
+
+	.collection .message a 
+	{
+		width: 90%;
+	}
+
+	.collection figure
+	{
+		display: none;
+		width: 100%;
+	}
+
+	#first_message
+	{
+		padding-top: 50px;
+	}
+
+	#first_message figure
+	{
+		display: inline-block;
+		
+	}
+	
+}

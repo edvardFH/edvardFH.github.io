@@ -425,10 +425,9 @@ input[type="checkbox"]
 	#scrolling_menu:checked + .menu
 	{
 		display: flex;
-		position: sticky;
 		top: 60px;
 	}
-
+	
 		/*--------------------------------- BLOC OPTION --------------------------------*/
 		.sub-menu
 		{
